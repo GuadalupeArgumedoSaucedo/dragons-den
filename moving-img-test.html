@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+<body>
+    <lord-icon
+    src="https://cdn.lordicon.com/kkiecexg.json"
+    trigger="hover"
+    stroke="bold"
+    colors="primary:#c69cf4,secondary:#3080e8"
+    style="width:250px;height:250px">
+</lord-icon>
+<lord-icon src="https://cdn. lordicon.com/kkiecexg. json" trigger="hover" stroke="bold"
+    colors="primary:#c69cf4,secondary:#3080e8" style="width:50px;height: 50px">
+</lord-icon>
+<script>
+     let myIcon = document.querySelector('lord-icon');
+        myIcon.addEventListener('click', eyeHover)
+        function eyeHover()
+        {
+            const currentBgColor = document.body.style.backgroundColor;
+            if(currentBgColor === 'black') {
+                document.body.style.backgroundColor = "red";
+                document.body.style.color = "yellow";
+            }
+            else {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }
+        }
+</script>
+</body>
+</html>
